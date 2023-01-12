@@ -1,9 +1,9 @@
-.app__navbar{
+.app__navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-black);
+    background: var(--color-black);
 
     padding: 1rem 2rem;
 }
@@ -12,7 +12,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    cursor: pointer;
 }
 
 .app__navbar-logo img {
@@ -24,12 +23,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    list-style: none;
 }
 
 .app__navbar-links li {
-    position: relative;
     margin: 0 1rem;
     cursor: pointer;
+    position: relative;
     transition: all 0.3s ease-in-out;
 }
 
@@ -43,20 +44,16 @@
     background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
-
+  
 .app__navbar-links li:hover {
     color: var(--color-grey);
 }
-
+  
 .app__navbar-links li:hover::before{
     display: block;
 }
 
 
-.p__opensans {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
 
 .app__navbar-login {
     display: flex;
@@ -64,20 +61,20 @@
     align-items: center;
 }
 
-.app__navbar-login div {
-    width: 1px;
-    height: 30px;
-    background-color: var(--color-golden);
-}
-
 .app__navbar-login a {
     margin: 0 1rem;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: .5s ease;
 }
 
 .app__navbar-login a:hover {
     border-bottom: 1px solid var(--color-golden);
+}
+
+.app__navbar-login div {
+    width: 1px;
+    height: 30px;
+    background: var(--color-grey);
 }
 
 .app__navbar-smallscreen {
@@ -97,7 +94,7 @@
     z-index: 5;
 }
 
-.app__navbar-smallscreen_overlay {
+.app__navbar-smallscreen_overlay .overlay__close {
     font-size: 27px;
     color: var(--color-golden);
     cursor: pointer;
@@ -107,16 +104,8 @@
     right: 20px;
 }
 
-.overlay__close {
-    position: absolute;
-    top: 2px;
-    right: -5px;
-    cursor: pointer;
-}
-
 .app__navbar-smallscreen_links {
     list-style: none;
-    margin-top: 20px;
 }
 
 .app__navbar-smallscreen_links li {
