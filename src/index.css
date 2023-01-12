@@ -23,6 +23,15 @@
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+ul, li {
+  list-style-type: none;
+  list-style: none;
+}
+
 a {
   color: unset;
   text-decoration: none;
