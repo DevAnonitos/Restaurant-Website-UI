@@ -2,6 +2,8 @@ import React from 'react';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 
+import { FiArrowUpRight } from "react-icons/fi"
+
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
 import images from '../../constants/images';
@@ -22,20 +24,24 @@ const Navbar = () => {
       </div>
 
       <ul className="app__navbar-links">
-        <li className="p__opensans">
+        <li className="p__opensans active">
           <a href="#home">Home</a>
         </li>
         <li className="p__opensans">
           <a href="#about">About</a>
+          <FiArrowUpRight fontSize={14} />
         </li>
         <li className="p__opensans">
           <a href="#menu">Menu</a>
+          <FiArrowUpRight fontSize={14} />
         </li>
         <li className="p__opensans">
           <a href="#awards">Awards</a>
+          <FiArrowUpRight fontSize={14} />
         </li>
         <li className="p__opensans">
           <a href="#contact">Contact</a>
+          <FiArrowUpRight fontSize={14} />
         </li>
       </ul>
       <div className="app__navbar-login">
