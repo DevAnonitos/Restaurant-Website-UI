@@ -104,6 +104,10 @@
     right: 20px;
 }
 
+.overlay__close {
+    cursor: pointer;
+}
+
 .app__navbar-smallscreen_links {
     list-style: none;
 }
