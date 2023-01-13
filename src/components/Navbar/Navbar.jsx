@@ -6,9 +6,21 @@ import { FiArrowUpRight } from "react-icons/fi"
 
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
+import { useOnlineStatus } from "../../hook/useDebugValue/useOnlineStatus.js";
+
 import images from '../../constants/images';
 
 import './Navbar.css';
+
+function StatusBar() {
+  const isOnline = useOnlineStatus();
+  
+  return (
+    <h1 className="p__opensans" style={{marginLeft: "14px"}}>
+      {isOnline ? '✅ Online store' : '❌ Disconnected store'}
+    </h1>
+  );
+};
 
 const Navbar = () => {
 
@@ -21,6 +33,7 @@ const Navbar = () => {
           src={images.gericht} 
           alt="app__logo" 
         />
+        <StatusBar />
       </div>
 
       <ul className="app__navbar-links">
@@ -44,6 +57,7 @@ const Navbar = () => {
           <FiArrowUpRight fontSize={14} />
         </li>
       </ul>
+
       <div className="app__navbar-login">
         <a 
           href="#login" 
