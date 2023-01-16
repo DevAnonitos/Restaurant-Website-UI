@@ -58,6 +58,13 @@ const Navbar = () => {
         </li>
       </ul>
 
+      <div className='app__navbar-search'>
+        <input 
+          type="email" 
+          placeholder="Search in Menu" 
+        />
+      </div>
+
       <div className="app__navbar-login">
         <a 
           href="#login" 
